@@ -1,34 +1,36 @@
-/* Styles for the navigation bar */
-.navigation {
+ /* Stylesheet for the portfolio website */
+ .navigation {
+    display: flex; /* Use Flexbox to create a flex container */
+    justify-content: center; /* Center the navigation title and links horizontally */
+    align-items: center; /* Center the content vertically within the navigation bar */
     padding: 10px; /* Add 10 pixels of padding around the navigation bar */
-    text-align: center; /* Center the content within the navigation bar */
 }
 
-.navigation-links {
+.navigationLinks {
     list-style: none; /* Remove the default bullet points from the list */
     margin: 0; /* Remove any margin around the list */
     padding: 0; /* Remove any padding around the list */
+    display: flex; /* Use Flexbox to create a flex container for the list items */
 }
 
 .navigation li {
-    display: inline-block; /* Display the list items horizontally (inline) */
+    margin: 0 20px; /* Add 10 pixels of margin to separate the list items */
 }
 
 .navigation li a {
     color: red; /* Set the color of the navigation links to red */
     text-decoration: none; /* Remove underlines from the navigation links */
     font-weight: bold; /* Set the font weight of the navigation links to bold */
-    padding: 0 20px; /* Add 0 pixels of padding on top and bottom, and 20 pixels of padding on the left and right of the navigation links */
 }
 
-/* Styles for the h1 element with id "portfolio-title" */
-#portfolio-title {
+/* Styles for the h1 element with id "portfolioTitle" */
+#portfolioTitle {
+    position: absolute; /* Position the title absolutely within the navigation bar */
+    left: 10px; /* Adjust the left position to move the title to the left of the page */
     color: black; /* Change the color of the h1 element with id "portfolio-title" to black */
     font-size: 28px; /* Set the font size of the h1 element to 28 pixels */
-    /* Optional: You can add any additional styles you want for the h1 element */
 }
 
 body {
-    background-color: #00FFFF; /* Set the background color of the body to a light blue color (#00FFFF) */
+    background-color: #00FFFF; /* Set the background color of the body to a light blue color */
 }
-
